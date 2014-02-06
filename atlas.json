@@ -1,6 +1,11 @@
 {
   "files": [
-    "readme.md",
+    "cloud-as-default.html",
+    "manage-environment.html",
+    "codebase.html",
+    "local-dev.html",
+    "ci-servers.html",
+    "monitoring.html",
     "application_stacks.html"
   ],
   "formats": {
@@ -32,6 +37,6 @@
       ]
     }
   },
-  "theme": "",
+  "theme": "oreillymedia/atlas_trade_theme",
   "title": "devops field guide"
 }
