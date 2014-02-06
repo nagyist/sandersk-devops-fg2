@@ -51,7 +51,13 @@ The CI server's executes a specific action on a repository whenever it receives 
 
 
 
-## All servers and important system are instrumented and monitored from a central service.
+## Instrumentation, mponitoring, and logging are build in from the start.
+
+* Nagios
+* Scout
+* New Relic
+* Pagerduty
+* Chatops
 
 
 
