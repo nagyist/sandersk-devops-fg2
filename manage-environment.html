@@ -1,4 +1,11 @@
 <section data-type="chapter">
-<h1>This Is a Heading</h1>
-<p>This is some text.</p>
+<h1 id="installing-and-configuring-the-environment-is-automated-in-the-code-rather-than-a-manual-process-run-by-a-systems-group">Installing and configuring the environment is automated in the code, rather than a manual process run by a systems group.</h1>
+
+<p>A key idea (maybe <em>the</em> key idea) of devops is that the environment in which your code will run should be modeled as code, and not be some separate thing that is a black box. (And, as we get a bit further down the stack, should be versioned with the code, as well.) It seems pretty basic, but the idea is that you should have a &quot;recipe&quot; that allows you to recreate the environment at any moment. Some of the key parts of managing the environment include:</p>
+
+<ul>
+	<li><em>General configuration</em>. General configuration includes setting up the basic requirements for the app to even run -- things like ensuring that whatever directory it will live in actually exists, creating the user a service will run as, specifying where log files should be stored, exposing (or blocking) the proper ports, setting any required permissions, installing any license or cert files, updating packages, and on and on. In short, anything that an app needs at the basic operating system level.</li>
+	<li><em>Installation and configuration of the required backing services</em>. The <a href="http://12factor.net">12 Factor App</a> describes <a href="http://12factor.net/backing-services">backing services</a> as &quot;any service the app consumes over the network as part of its normal operation. Examples include datastores (such as MySQL or CouchDB), messaging/queueing systems (such as RabbitMQ or Beanstalkd), SMTP services for outbound email (such as Postfix), and caching systems (such as Memcached).&quot; Backing services can also include 3rd party services, like Amazon AWS (SQS, dynamodb etc), <a href="http://developer.github.com/v3/">GitHub</a>, <a href="https://dev.twitter.com/">Twitter</a>, <a href="https://www.parse.com/">Parse</a>, and a host of other services. Ideally, the &quot;code for a twelve-factor app makes no distinction between local and third party services.&quot;</li>
+	<li><em>Installation of the development environment itself</em>. If you're writing a Rails app, for example, you'll need to have the required versions of Ruby, Rails, bundler, and anything else you need. The same goes for any other stack.</li>
+</ul>
 </section>
