@@ -1,4 +1,11 @@
 <section data-type="chapter">
-<h1>This Is a Heading</h1>
-<p>This is some text.</p>
+<h1 id="changes-in-the-master-branch-of-the-codebase-trigger-a-continuous-integration-server-to-deploys-code-or-perform-tests">Changes in the master branch of the codebase trigger a continuous integration server to deploys code or perform tests.</h1>
+<p>The CI server's executes a specific action on a repository whenever it receives a commit hook.  For example, is a developer makes a commit against repository called foo, the CI server might:</p>
+<ul>
+<li>clone down a local copy of foo</li>
+<li>execute foo's test suites (see the section on application stacks for more about this)</li>
+<li>if the tests fail, the CI server sends an alert to the development team and halts the process</li>
+<li>if the test suite passes, the CI server might deploy the code to a staging or even production server</li>
+</ul>
+ 
 </section>
