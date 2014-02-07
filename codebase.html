@@ -1,5 +1,5 @@
 <section data-type="chapter">
-<h1 id="code-is-stored-in-a-distributed-version-control-system-probably-git-with-hooks-to-external-services">Codebase in a distributed version control system (probably git) with hooks to external services.</h1>
+<h1 id="code-is-stored-in-a-distributed-version-control-system-probably-git-with-hooks-to-external-services">Codebase stored in a distributed version control system (probably git) with hooks to external services.</h1>
 
 <p>The version control system is the heart of the new development process. At the most basic level, a VCS allows developers to keep track of all the changes made to a set of files and be able to roll back to specific points in time in case something screws up. In some systems, like <a href="http://subversion.apache.org/">Subversion</a>, the code is checked out and then checked back in from a central repository. If there is a conflict between two developers' files (for example, both of them edited the same line of code), then the two version must be merged together. This can be a painful process.</p>
 
@@ -20,6 +20,41 @@
 <p>In addition to these coordination functions, most version control system also offer a feature called a <em>hook</em>. A hook is a process that fires once a specific event, like a commit, happens to the repository. Hooks can be defined in the repo itself, but also in the hosting service. For example, GitHub lets you define &quot;service&quot; hooks that are called whenever a specific event occurs. These hooks are the tie-in to the continuous integration (CI server).</p>
 
 <p>&nbsp;</p>
+
+<section data-type="sect1">
+<h1>Version Control System</h1>
+
+<p>Here are the key version control systems:</p>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width: 95%;">
+	<thead>
+		<tr>
+			<th scope="col">&nbsp;</th>
+			<th scope="col">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>git</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>mercurial</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>subversion</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+</section>
 
 <ul>
 	<li>git</li>
