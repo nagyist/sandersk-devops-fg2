@@ -1,11 +1,5 @@
 {
   "files": [
-    "cloud-as-default.html",
-    "manage-environment.html",
-    "codebase.html",
-    "local-dev.html",
-    "ci-servers.html",
-    "monitoring.html",
     "application_stacks.html"
   ],
   "formats": {
