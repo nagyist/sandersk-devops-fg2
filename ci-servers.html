@@ -1,6 +1,21 @@
 <section data-type="chapter">
 <h1 id="changes-in-the-master-branch-of-the-codebase-trigger-a-continuous-integration-server-to-deploys-code-or-perform-tests">CI servers deploy code, not people.</h1>
 
+<p>Software legend Martin Fowler defines&nbsp;<a data-original-title="" href="http://www.martinfowler.com/articles/continuousIntegration.html" title="">continuous deployment</a>&nbsp;as &quot;a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day.&quot; Fowler's seminal article defines the key best practices as:</p>
+
+<ul>
+	<li>Maintain a Single Source Repository.</li>
+	<li>Automate the Build</li>
+	<li>Make Your Build Self-Testing</li>
+	<li>Everyone Commits To the Mainline Every Day</li>
+	<li>Every Commit Should Build the Mainline on an Integration Machine</li>
+	<li>Keep the Build Fast</li>
+	<li>Test in a Clone of the Production Environment</li>
+	<li>Make it Easy for Anyone to Get the Latest Executable</li>
+	<li>Everyone can see what's happening</li>
+	<li>Automate Deployment</li>
+</ul>
+
 <p>The CI server's executes a specific action on a repository whenever it receives a commit hook. For example, is a developer makes a commit against repository called foo, the CI server might:</p>
 
 <ul>
@@ -10,7 +25,7 @@
 	<li>if the test suite passes, the CI server might deploy the code to a staging or even production server</li>
 </ul>
 
-<p>&nbsp;</p>
+<p>Here are a few of the CI servers you might encounter:</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width: 95%;">
 	<thead>
